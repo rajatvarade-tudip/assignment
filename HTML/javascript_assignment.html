@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="name">
+<button id="chk" onclick='abc()'>CHECK</botton>
+<span id="demo"></span>
+
+<script>
+function abc(){
+
+function Person() {
+    
+}
+Person.prototype.isEmpty = function(s) {
+    var l=s;
+var arr = l.split('');
+var i;
+var flag=1;
+for(i=0;i<arr.length-1;i++){
+if(arr[i] == " "){
+flag=0;
+}
+
+}
+
+    if((l == "")||(l==" ")||(flag==0)|| (l == null))
+    {
+    	 alert("true");
+    }
+    else
+     {
+    	 alert("false");
+    }
+
+
+
+};
+var s=document.getElementById("name").value;
+var myFather = new Person();
+myFather.isEmpty(s);
+}
+</script>
+</body>
+</html>
